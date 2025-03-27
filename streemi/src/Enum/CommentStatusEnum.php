@@ -1,20 +1,12 @@
 <?php
 
-namespace App\Enum;
-
-enum CommentStatusEnum: string
-{
-    <?php
+declare(strict_types=1);
 
 namespace App\Enum;
 
 enum CommentStatusEnum: string
 {
-    case ACTIVE = 'active';
     case PENDING = 'pending';
-    case BLOCKED = 'blocked';
-    case BANNED = 'banned';
-    case DELETED = 'deleted';
-}
-
+    case VALIDATED = 'validated';
+    case REJECTED = 'rejected';
 }

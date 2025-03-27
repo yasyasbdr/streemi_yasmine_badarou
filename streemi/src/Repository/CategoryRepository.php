@@ -2,22 +2,22 @@
 
 namespace App\Repository;
 
-use App\Entity\Comments;
+use App\Entity\Category;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
- * @extends ServiceEntityRepository<Comments>
+ * @extends ServiceEntityRepository<Category>
  */
-class CommentsRepository extends ServiceEntityRepository
+class CategoryRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
     {
-        parent::__construct($registry, Comments::class);
+        parent::__construct($registry, Category::class);
     }
 
     //    /**
-    //     * @return Comments[] Returns an array of Comments objects
+    //     * @return Category[] Returns an array of Category objects
     //     */
     //    public function findByExampleField($value): array
     //    {
@@ -31,7 +31,7 @@ class CommentsRepository extends ServiceEntityRepository
     //        ;
     //    }
 
-    //    public function findOneBySomeField($value): ?Comments
+    //    public function findOneBySomeField($value): ?Category
     //    {
     //        return $this->createQueryBuilder('c')
     //            ->andWhere('c.exampleField = :val')

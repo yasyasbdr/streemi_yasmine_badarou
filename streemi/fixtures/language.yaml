@@ -1,0 +1,5 @@
+App\Entity\Language:
+   lang_fr:
+    nom: 'Français'
+    code: 'FR'
+    lang_us:

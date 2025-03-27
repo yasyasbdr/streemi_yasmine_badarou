@@ -2,39 +2,39 @@
 
 namespace App\Repository;
 
-use App\Entity\Comments;
+use App\Entity\Languages;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
- * @extends ServiceEntityRepository<Comments>
+ * @extends ServiceEntityRepository<Languages>
  */
-class CommentsRepository extends ServiceEntityRepository
+class LanguagesRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
     {
-        parent::__construct($registry, Comments::class);
+        parent::__construct($registry, Languages::class);
     }
 
     //    /**
-    //     * @return Comments[] Returns an array of Comments objects
+    //     * @return Languages[] Returns an array of Languages objects
     //     */
     //    public function findByExampleField($value): array
     //    {
-    //        return $this->createQueryBuilder('c')
-    //            ->andWhere('c.exampleField = :val')
+    //        return $this->createQueryBuilder('l')
+    //            ->andWhere('l.exampleField = :val')
     //            ->setParameter('val', $value)
-    //            ->orderBy('c.id', 'ASC')
+    //            ->orderBy('l.id', 'ASC')
     //            ->setMaxResults(10)
     //            ->getQuery()
     //            ->getResult()
     //        ;
     //    }
 
-    //    public function findOneBySomeField($value): ?Comments
+    //    public function findOneBySomeField($value): ?Languages
     //    {
-    //        return $this->createQueryBuilder('c')
-    //            ->andWhere('c.exampleField = :val')
+    //        return $this->createQueryBuilder('l')
+    //            ->andWhere('l.exampleField = :val')
     //            ->setParameter('val', $value)
     //            ->getQuery()
     //            ->getOneOrNullResult()

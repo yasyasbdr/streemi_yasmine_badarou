@@ -2,39 +2,39 @@
 
 namespace App\Repository;
 
-use App\Entity\Comments;
+use App\Entity\MediaLanguages;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
- * @extends ServiceEntityRepository<Comments>
+ * @extends ServiceEntityRepository<MediaLanguages>
  */
-class CommentsRepository extends ServiceEntityRepository
+class MediaLanguagesRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
     {
-        parent::__construct($registry, Comments::class);
+        parent::__construct($registry, MediaLanguages::class);
     }
 
     //    /**
-    //     * @return Comments[] Returns an array of Comments objects
+    //     * @return MediaLanguages[] Returns an array of MediaLanguages objects
     //     */
     //    public function findByExampleField($value): array
     //    {
-    //        return $this->createQueryBuilder('c')
-    //            ->andWhere('c.exampleField = :val')
+    //        return $this->createQueryBuilder('m')
+    //            ->andWhere('m.exampleField = :val')
     //            ->setParameter('val', $value)
-    //            ->orderBy('c.id', 'ASC')
+    //            ->orderBy('m.id', 'ASC')
     //            ->setMaxResults(10)
     //            ->getQuery()
     //            ->getResult()
     //        ;
     //    }
 
-    //    public function findOneBySomeField($value): ?Comments
+    //    public function findOneBySomeField($value): ?MediaLanguages
     //    {
-    //        return $this->createQueryBuilder('c')
-    //            ->andWhere('c.exampleField = :val')
+    //        return $this->createQueryBuilder('m')
+    //            ->andWhere('m.exampleField = :val')
     //            ->setParameter('val', $value)
     //            ->getQuery()
     //            ->getOneOrNullResult()
